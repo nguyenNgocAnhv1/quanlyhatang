@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/RE4wppK.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.login{
+    width: 400px;
+    height: 500px;
+    background-color: #0a102682;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__header{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login__header-h2{
+    color: #f3f5f1;
+}
+.login__header-body{
+    width: 310px;
+    height: 360px;
+    border: 1px solid #b9bab8;
+    display: flex;
+    justify-content: center;
+}
+.login__header-body-part{
+    margin-top: 20px;
+    height: 80%;
+    width: 80%;
+}
+
+.login__header-tk-header,.login__header-mk-header{
+    color: #f3f5f1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+
+}
+.login__header-tk-input,.login__header-mk-input{
+    padding-left: 5px;
+    width: 100%;
+    height: 38px;
+    background-color: #ffffffb7;
+    outline: none;
+    border: none;
+
+}
+.header__tk{
+    margin-top: 25px;
+}
+.header__mk,.login__remember,.login-button,.login__div-forgot-password,.login__icon{
+    margin-top: 18px;
+}
+.login__remember{
+    display: flex;
+    align-items: center;
+}
+.login__remember-checkbox{
+    padding: 0;
+    margin: 0;
+}
+.login__remember-text{
+    color: #087689;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+.login-button{
+    width: 100%;
+    height: 30px;
+    background-color: #2dc9dadb;
+    color: white;
+    border-color: transparent;
+    border-radius: 20px;
+}
+.login__div-forgot-password{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.login__forgot-password{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 12px;
+
+}
+.login__icon{
+    display: flex;
+    justify-content: center;
+
+}
+.login__icon i{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    background-color: #002B4E;
+    border: 2px #2dc9dadb solid;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #002B4E;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #002B4E;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 2px;
+    top: -1px;
+    width: 5px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
