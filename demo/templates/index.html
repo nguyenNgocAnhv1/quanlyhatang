@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản Lý</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="login">
+            <div class="login__header">
+                <h2 class="login__header-h2">Đăng Nhập</h2>
+            </div>
+            <div class="login__header-body">
+                <div class="login__header-body-part">
+                    <div class="header__tk">
+                        <p class="login__header-tk-header ">Tài khoản</p>
+                        <input type="text" class="login__header-tk-input" placeholder="Nhập tài khoản">
+                    </div>
+                    <div class="header__mk">
+                        <p class="login__header-mk-header">Mật khẩu</p>
+                        <input type="password" class="login__header-mk-input" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="login__remember">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        <span class="login__remember-text">Remember me</span>
+                    </div>
+                    <button class="login-button">Login</button>
+                    <div class="login__div-forgot-password">
+                        <a href="" class="login__forgot-password">Forgot Password?</a>
+                    </div>
+                    <div class="login__icon">
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-google-plus"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
