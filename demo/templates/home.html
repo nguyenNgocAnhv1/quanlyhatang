@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Font awesome -->
     <!-- Root CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href=" {{ url_for('static',filename='css/style.css') }}">
 
     <!-- Set CSS normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -30,7 +30,7 @@
 <body>
     <div class="main">
         <div class="header-logo">
-            <img src="img/logosys2.png" alt="" class="logo-header">
+            <img src="{{ url_for('static',filename='img/logosys2.png') }}" alt="" class="logo-header">
         </div>
         <div class="header2">
             <div class="header2-logo">
@@ -66,7 +66,7 @@
         </div>
         <div class="footer">
             <div class="footer-logo">
-                <img src="img/logosys2.png" alt="" class="logo-header">
+                <img src=" {{ url_for('static',filename='img/logosys2.png') }}" alt="" class="logo-header">
 
             </div>
             <div class="footer-body">
@@ -74,7 +74,8 @@
                 <p class="footer-body__p2">Hotline: 0903568698</p>
             </div>
             <div class="footer-out">
-                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+                
             </div>
         </div>
     </div>
