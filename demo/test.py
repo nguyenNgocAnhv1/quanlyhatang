@@ -7,6 +7,9 @@ host = "192.168.1.15"
 app = Flask("__main__")
 db = pyodbc.connect("DRIVER={MySQL ODBC 8.0 ANSI Driver}; SERVER=localhost"+"; PORT=3306;DATABASE=quanlyhatang"+"; UID=root"+";PASSWORD="+";OPTION = 3;")
 now = []
+@app.route('/404')
+def err():
+    return render_template('404.html')
 @app.route('/logout')
 def logout():
     return redirect('/')
