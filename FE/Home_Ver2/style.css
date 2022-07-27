@@ -12,7 +12,7 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 5;
 
 }
 
@@ -191,6 +191,8 @@
     height: 43px;
     display: inline-flex;
     justify-content: flex-start;
+    position: relative;
+    z-index: 3;
 }
 
 /* .feature tr td:hover{
@@ -242,14 +244,16 @@
 /*  Kết thúc table*/
 .animation-right {
     position: relative;
+    z-index: 2;
 }
 
 .animation-right svg {
     position: absolute;
-    top: -234px;
-    left: 120px;
+    top: -486px;
+    left: 493px;
     width: 600px;
     z-index: 1;
+    /* display: none;    */
 }
 
 .footer {
@@ -274,6 +278,7 @@
     display: block;
     color: white;
     font-size: 1.6rem;
+    line-height: 2.2rem;
 }
 .footer-info::after{
     content: "";
