@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý hạ tầng</title>
+  <link rel="icon" href="logo_EGOVC.png" type="image/x-icon">
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fon awer some -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="header shadow-sm">
+    <section class="section1">
+      <nav class="navbar navbar-expand-lg bg-light p-0">
+        <div class="container-xl p-0">
+          <a class="navbar-brand p-0" href="#">
+            <img height="70" src="logo_EGOVC.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="mr-aotu">
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Danh mục</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Danh sách</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text" href="#">Phòng quản lý</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </div>
+  <div class="main pt-4">
+    <section class="section-2">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-sm-6 d-flex align-items-center pt-5 p-sm-0">
+            <div class="">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Tất cả</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">Đang sử dụng</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">Không sử dụng</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 pt-5 p-sm-0">
+            <div class="d-flex align-items-center">
+              <div class="form-floating w-100 ">
+                <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Tìm kiếm</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3 pt-5">
+      <div class="container-xl">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">STT</th>
+              <th scope="col">Danh sách</th>
+              <th scope="col">Chức năng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="position-relative">
+                <p class="_tr">1</p>
+
+              </th>
+              <td>
+                <div class="">
+                  <span>Phòng: </span>
+                  <span class="_text-blue">QLHTTT - TTCPĐT(ID:1)</span>
+                </div>
+                <div class="">
+                  <span>Trạng thái: </span>
+                  <span class="_text-blue">Không dùng</span>
+                </div>
+                <div class="">
+                  <span>Email: </span>
+                  <span class="_text-blue"></span>
+                </div>
+                <div class="">
+                  <span>Website: </span>
+                  <span class="_text-blue"></span>
+                </div>
+              </td>
+              <td class="position-relative">
+                  <div class="_tr2">
+                    <button type="button" class="btn btn-outline-primary">Chỉnh sửa</button>
+                  <button type="button" class="btn btn-outline-secondary">Xóa</button>
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <div class="footer d-flex align-items-center mt-5 d-none">
+    <footer class="container-xl">
+      <div class="row">
+        <div class="col-10">
+          <div class="footer-info">
+            <span class="footer-info__span">Trụ sở chính: Tầng 14, Tòa nhà Cục Viễn thông, số 68 đường Dương
+              Đình Nghệ, Yên Hòa, Cầu Giấy, Hà Nội.</span>
+            <span class="footer-info__span">Điện thoại: 024.37821766 | Fax: 024.35378208</span>
+            <span class="footer-info__span">Ghi rõ nguồn 'Trang thông tin điện tử Cục Tin học hóa' hoặc
+              'www.aita.gov.vn' khi bạn phát hành lại thông tin từ Website này.</span>
+          </div>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-end">
+
+          <a href="/" class="footer-logout__a">
+            <img class="footer-logout__img" src="sign_out_2.png" alt="">
+            <!-- <i class="fa-solid fa-arrow-right-from-bracket footer-logout__img"></i> -->
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: inherit; */
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.danh-muc__div1 {
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px #ccc;
+    /* margin: 12px; */
+    background-color: #28B9E9;
+    cursor: pointer;
+    transform: scale(1);
+    transition: linear 0.1s;
+}
+
+.danh-muc__div1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 3vmin;
+
+    /* padding: 12px 12px 6px 12px; */
+    /* border-bottom: 1px solid #333; */
+}
+
+.danh-muc__li-2 {
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px 12px 12px;
+
+}
+
+
+.danh-muc__div1:hover {
+    transform: scale(1.04);
+}
+
+/*  */
+.danh-muc__div2 {
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px #ccc;
+    margin-top: 12px;
+    background-image: linear-gradient(to right top, #6782DF, #2979ff 70%);
+    transform: scale(1);
+    transition: linear 0.1s;
+
+}
+
+.danh-muc__div2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 3vmin;
+    line-height: 100%;
+    /* padding: 12px 12px 6px 12px; */
+    /* border-bottom: 1px solid #333; */
+}
+
+.danh-muc__li-2 {
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px 12px 12px;
+
+}
+
+
+.danh-muc__div2:hover {
+    transform: scale(1.04);
+
+}
+.footer-info{
+    margin-top: 5px;
+    text-align: left;
+    position: relative;
+    padding-right: 10px;
+}
+.footer-info__span{
+    display: block;
+    color: white;
+    font-size: 2vmin;
+    /* line-height: 2.2rem; */
+}
+.footer-info::after{
+    content: "";
+    position: absolute;
+    border: 0.2px solid #a7c4e0;
+    background-color: #a7c4e0;
+    height: 70px;
+    top: 50%;
+    transform: translateY(-50%);    
+    right: 0;
+}
+.footer-logout{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer-logout__img{
+    height: 5vmin;
+    color: white;
+    font-size: 6vmin;
+    /* padding-top: 10px; */
+}
+.footer {
+    padding: 2vmin 0;
+    background: -webkit-linear-gradient(45deg, #1069c2, #28B9E9 90%);
+        
+}
+.text-right{
+    text-align: right;
+}
+.test_1{
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
